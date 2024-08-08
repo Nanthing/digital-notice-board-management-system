@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #1D272A;
+            background: linear-gradient(135deg, #e1e4e8, #b0b5b8);
+        }
+        header {
+            background-color: #e1e4e8;
+            color: #1D272A;
+            padding: 1rem 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header .logo h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+            position: relative;
+        }
+        nav ul li a {
+            color: #E1E4E8;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #1D272A;
+            transition: all 0.3s ease;
+            overflow: hidden;
+            text-align: center;
+            font-size: 0.875rem;
+            white-space: nowrap;
+            padding: 10px;
+        }
+        nav ul li a i {
+            font-size: 1.2rem;
+            margin-right: 5px;
+        }
+        nav ul li a span {
+            display: none;
+        }
+        nav ul li a.expand {
+            border-radius: 20px;
+            width: auto;
+            padding: 10px 20px;
+            background-color: #B1121B;
+            color: #e1e4e8;
+            font-size: 0.875rem;
+        }
+        nav ul li a.expand i {
+            display: none;
+        }
+        nav ul li a.expand span {
+            display: inline;
+        }
+        nav ul li a:hover {
+            border-radius: 20px;
+            width: auto;
+            padding: 10px 20px;
+            background-color: #B1121B;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        nav ul li a:hover i {
+            display: none;
+        }
+        nav ul li a:hover span {
+            display: inline;
+        }
+        main {
+    padding: 20px 20px; 
+}
+.services {
+    max-width: 1200px;
+    margin: 20px auto 0 auto; 
+}
+
+        .services h2 {
+            text-align: center;
+             color: #1D272A;
+            margin-bottom: 40px;
+        }
+        .service-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #1E252D, #2C3E50);
+            color: #E1E4E8; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .service-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+        .service-item h3 {
+            color: #999C9F;
+            margin-top: 0;
+            transition: color 0.3s ease;
+        }
+        .service-item:hover h3 {
+            color:  #E1E4E8;
+        }
+        .service-item p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #2e3a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            
+            width: 100%;
+            bottom: 0;
+        }
+        .logo-image {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="logo-image"> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.php"><i class="fas fa-home"></i><span>Home</span></a></li>
+                    <li><a href="about.html" class="nav-link"><i class="fa-solid fa-info"></i><span>About us</span></a></li>
+                    <li><a href="services.html"><i class="fas fa-cogs"></i><span>Services</span></a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Event Announcements</h3>
+                <p>Our digital notice board allows you to post and manage announcements for various events, including company meetings, community events, and special occasions. Easily keep everyone informed with up-to-date information.</p>
+            </div>
+            <div class="service-item">
+                <h3>Important Updates</h3>
+                <p>Quickly share important updates and notifications to keep your audience informed about critical changes or news. This feature is ideal for urgent messages or significant company-wide announcements.</p>
+            </div>
+            <div class="service-item">
+                <h3>Customizable Display</h3>
+                <p>Customize the appearance of your notice board to match your branding or preferences. Choose from various themes, layouts, and color schemes to make sure your notice board stands out and reflects your organization's identity.</p>
+            </div>
+            <div class="service-item">
+                <h3>User Management</h3>
+                <p>Manage user access and permissions with ease. Assign different roles to users such as administrators, editors, and viewers to control who can post, edit, or view notices on the board.</p>
+            </div>
+            <div class="service-item">
+                <h3>Interactive Features</h3>
+                <p>Engage your audience with interactive features like comment sections, polls, and feedback forms. Encourage participation and gather valuable input from your viewers directly through the notice board.</p>
+            </div>
+            <div class="service-item">
+                <h3>Mobile Compatibility</h3>
+                <p>Ensure that your digital notice board is accessible from any device. Our platform is fully responsive, making it easy for users to view and interact with notices from their smartphones and tablets.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 web base Notice board. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.service-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.transform = 'scale(1.05)';
+                item.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.3)';
+            });
+    
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'scale(1)';
+                item.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+            });
+        });
+    </script>
+</body>
+</html>

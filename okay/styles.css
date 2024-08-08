@@ -1,0 +1,342 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #e1e4e8, #b0b5b8);
+}
+
+.wrapper {
+    flex: 1;
+}
+
+/* Header styles */
+header {
+    background-color: #e1e4e8;
+    color: #1D272A;
+    padding: 1rem 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #E1E4E8;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: #1D272A; 
+    transition: all 0.3s ease; 
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.875rem; 
+    white-space: nowrap; 
+    padding:10px;
+}
+nav ul li a i {
+    font-size: 1.2rem; 
+    margin-right: 5px; 
+}
+nav ul li a span {
+    display: none; 
+}
+nav ul li a.expand {
+    border-radius: 50px; 
+    width: auto; 
+    padding: 10px 20px; 
+    background-color: #B1121B; 
+    color: white;
+    font-size: 0.875rem; 
+}
+
+nav ul li a.expand i {
+    display: none; 
+}
+
+nav ul li a.expand span {
+    display: inline; 
+}
+nav ul li a:hover {
+    border-radius: 20px; 
+    width: auto; 
+    height: auto; 
+    padding: 10px 20px; 
+    background-color: #B1121B; 
+    color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+}
+nav ul li a:hover i {
+    display: none; 
+}
+
+nav ul li a:hover span {
+    display: inline; 
+}
+
+/* Marquee styles */
+marquee.announcement {
+    background-color: #0C1228;
+    color: white;
+    padding: 0.5rem 0;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Notice Board styles */
+.table-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the table to make it look like it's floating */
+.notice-table {
+    width: 60%; 
+    max-width: 600px; 
+    border-collapse: separate; 
+    border-spacing: 0; 
+    border-radius: 10px; 
+    box-shadow: 0 20px px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: linear-gradient(135deg, #B1121B, #8A0A0A);
+    border: 1px solid #B1121B;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+    color: #E1E4E8; 
+   
+
+}
+
+.notice-table thead {
+    background-color:  #1B272F; 
+    color: #E1E4E8;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8), -1px -1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.notice-table th {
+    padding: 12px 15px;
+    text-align: center; 
+    
+}
+
+.notice-table td {
+    padding: 10px 15px;
+    background-color: #fff; 
+    border-radius: 30px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin: 10px 10px; 
+    border: none; 
+    display: inline-block; 
+    transition: all 0.3s ease; 
+}
+.bubble-pop {
+    transform: scale(1.1); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.notice-table tbody td {
+    border: none; 
+    margin: 10px 20px;
+    color: #1D272A;
+   
+}
+
+.notice-table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    margin: -5px; 
+}
+
+.notice-table tbody td:hover {
+   
+    background-color:white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional styles to ensure proper gap between top and bottom */
+.notice-table td {
+    margin: 10px 0; 
+}
+.notice-table a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.notice-table a:hover {
+    color: #4029ed; 
+}
+/* Footer styles */
+footer {
+    background-color: #2e3a40;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Auth forms styles */
+.auth-forms {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-forms.active {
+    display: flex;
+}
+
+.form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+form {
+    display: none;
+}
+
+form.active {
+    display: block;
+}
+
+form h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color:#1D272A;
+    color:  #E1E4E8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color:#B1121B;
+}
+
+form p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+form p a {
+    color: #2E3191;
+    text-decoration: none;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    nav ul li:first-child {
+        margin-top: 0;
+    }
+
+    .notice-board {
+        padding: 1rem;
+    }
+
+    .notice-table th,
+    .notice-table td {
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .notice-board h2 {
+        font-size: 1.5rem;
+    }
+
+    .notice-table th,
+    .notice-table td {
+        padding: 4px;
+        font-size: 0.8rem;
+    }
+}
+.logo-image {
+    height: 50px; 
+    width: auto; 
+}
